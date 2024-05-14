@@ -1,51 +1,50 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
 }
 
-html{
-  scroll-behavior: smooth; 
+html {
+  scroll-behavior: smooth;
 }
 
 /* INICIO HEADER */
-.nav{
+.nav {
   background-color: #181818;
   height: 80px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 9;
 }
 
-.nav-list{
+.nav-list {
   display: flex;
   align-items: center;
   list-style: none;
   margin-right: 28px;
 }
 
-.nav-list a{
+.nav-list a {
   text-decoration: none;
   color: #DDD;
   padding: 20px;
 }
 
-.nav-list a:hover{
+.nav-list a:hover {
   color: #FFFFFF;
 }
 /* FIM HEADER */
 
-
 /* INICIO MAIN */
-.main{
+.main {
   width: 100%;
   background-color: #000;
   height: calc(100vh - 80px);
@@ -55,7 +54,7 @@ html{
   padding-left: 10%;
 }
 
-.main h1{
+.main h1 {
   color: #FFFFFF;
   font-size: 54px;
 }
@@ -68,10 +67,10 @@ html{
   margin-bottom: 35px;
 }
 
-.call-to-action{
+.call-to-action {
   cursor: pointer;
   background-color: #FFFFFF;
-  border:0;
+  border: 0;
   padding: 14px;
   border-radius: 4px;
   font-size: 18px;
@@ -79,48 +78,47 @@ html{
   transition: 0.9s;
 }
 
-.call-to-action:hover{
+.call-to-action:hover {
   transform: scale(1.1);
 }
 
-.main a{
+.main a {
   text-decoration: none;
   color: #181818;
 }
 /* FIM MAIN */
 
 /* INICIO ABOUT */
-.about{
- background-color: #FFFFFF;
- width: 100%; 
- padding-left: 10%;
- padding-right: 10%;
- padding-top: 80px;
- padding-bottom: 80px;
-
- display: flex;
- align-items: center;
- justify-content: space-between;
+.about {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.about div{
+.about div {
   max-width: 50%;
   padding-right: 40px;
 }
 
-.about img{
+.about img {
   max-width: 450px;
   border-radius: 8px;
 }
 
-.about div h2{
+.about div h2 {
   font-size: 32px;
   margin-bottom: 14px;
 }
 /* FIM ABOUT */
 
 /* INICIO PROJECTS */
-.projects{
+.projects {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -129,18 +127,18 @@ html{
   padding: 80px 0;
 }
 
-.projects h2{
+.projects h2 {
   font-size: 32px;
   margin-bottom: 8px;
   margin-top: 20px;
 }
 
-.projects p{
+.projects p {
   margin-bottom: 40px;
   font-style: italic;
 }
 
-.project-list{
+.project-list {
   width: 100%;
   margin-bottom: 8px;
   display: flex;
@@ -148,7 +146,7 @@ html{
   align-items: center;
 }
 
-.projects img{
+.projects img {
   width: 22%;
   margin-left: 0.5%;
   margin-right: 0.5%;
@@ -156,13 +154,13 @@ html{
   transition: 0.9s;
 }
 
-.projects img:hover{
+.projects img:hover {
   opacity: 1;
 }
 
-.action{
+.action {
   background-color: #181818;
-  border:0;
+  border: 0;
   padding: 12px 28px;
   border-radius: 4px;
   font-size: 18px;
@@ -173,7 +171,7 @@ html{
 /* FIM PROJECTS */
 
 /* INICIO RODAPE */
-footer{
+footer {
   width: 100%;
   background-color: #181818;
   padding: 60px 0;
@@ -193,66 +191,74 @@ footer p {
 }
 /* FIM RODAPE */
 
-
 /* RESPONSIVIDADE */
-
-@media (max-width: 1050px){
+@media (max-width: 1050px) {
   /* INICIO MAIN */
-  .main h1{
-    font-size: 45px;
+  .main h1 {
+      font-size: 45px;
   }
 
-  .main p{
-    font-size: 18px;
+  .main p {
+      font-size: 18px;
   }
 
-  .main{
-    background-size: cover;
+  .main {
+      background-size: cover;
   }
   /* FIM MAIN */
 
-  /* INICIO SOBRE */
-  .about{
-    flex-direction: column;
-    padding-top: 80px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
+  /* INICIO ABOUT */
+  .about {
+      flex-direction: column;
+      padding-top: 80px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
   }
 
-  .about div{
-    max-width: 80%;
+  .about div {
+      max-width: 80%;
   }
 
-  .about div h2{
-    font-size: 45px;
+  .about div h2 {
+      font-size: 45px;
   }
 
-  .about img{
-    width: 80%;
-    margin-top: 30px;
+  .about img {
+      width: 80%;
+      margin-top: 30px;
   }
-  /* FIM SOBRE */
+  /* FIM ABOUT */
 
   /* INICIO PROJETOS */
-  .projects img{
-    width: 27.5%;
+  .projects img {
+      width: 27.5%;
   }
   /* FIM PROJETOS */
 
   /* INICIO RODAPE */
-  footer{
-    flex-direction: column;
+  footer {
+      flex-direction: column;
   }
 
-  footer h3{
-    font-size: 24px;
-    margin-bottom: 8px;
+  footer h3 {
+      font-size: 24px;
+      margin-bottom: 8px;
   }
 
-  footer p{
-    margin:0;
+  footer p {
+      margin: 0;
   }
   /* FIM RODAPE */
-
 }
+.butao {
+  background-color: #181818;
+  border: 0;
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
